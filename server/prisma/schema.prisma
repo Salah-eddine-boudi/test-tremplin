@@ -1,13 +1,30 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
-
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Contact {
+  id             Int              @id @default(autoincrement())
+  civility       String
+  lastName       String
+  firstName      String
+  email          String
+  phone          String
+  messageType    String
+  message        String           @default("")
+  createdAt      DateTime         @default(now())
+  availabilities Availability[]
+}
+
+model Availability {
+  id        Int     @id @default(autoincrement())
+  day       String
+  hour      String
+  minute    String
+  contactId Int
+  contact   Contact @relation(fields: [contactId], references: [id])
 }
