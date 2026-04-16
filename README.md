@@ -9,7 +9,7 @@
 | **Formation** | Master 1 — Développement Logiciel et Systèmes d'Information|
 | **Stage recherché** | 3 à 4 mois, à partir du 27 avril 2026 |
 | **GitHub** | [github.com/Salah-eddine-boudi](https://github.com/Salah-eddine-boudi) |
-| **LinkedIn** | [linkedin.com/in/salah-eddine-boudi]([(https://www.linkedin.com/in/salah-eddine-boudi-b26b59252/))] |
+| **LinkedIn** | [linkedin.com/in/salah-eddine-boudi](https://www.linkedin.com/in/salah-eddine-boudi-b26b59252/) |
 | **Email** | salah-eddine.boudi@student.junia.com |
 
 ---
