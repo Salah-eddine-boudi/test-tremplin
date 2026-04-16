@@ -60,7 +60,6 @@ test-tremplin/
 │       ├── index.js         # Serveur Express + routes API
 │       └── tests/       # Tests unitaires
 └── README.md
-
 ---
 
 ## 🚀 Lancement du projet
