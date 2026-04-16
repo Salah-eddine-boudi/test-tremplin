@@ -47,20 +47,26 @@
 
 ### Architecture
 
+```
 test-tremplin/
-├── client/                  # React (Vite)
+│
+├── client/                       # React (Vite)
 │   └── src/
-│       ├── components/      # Composants React (ContactForm, PersonalInfo, etc.)
-│       ├── hooks/           # Custom hooks (useAvailability)
-│       ├── services/        # Appels API centralisés
-│       └── assets/          # Images
-├── server/                  # Express.js + Prisma
-│   ├── prisma/              # Schéma + migrations
+│       ├── components/           # Composants React
+│       │   └── ContactForm/      # ContactForm, PersonalInfo, etc.
+│       ├── hooks/                # Custom hooks (useAvailability)
+│       ├── services/             # Appels API centralisés
+│       └── assets/               # Images
+│
+├── server/                       # Express.js + Prisma
+│   ├── prisma/                   # Schéma + migrations
 │   └── src/
-│       ├── index.js         # Serveur Express + routes API
-│       └── tests/       # Tests unitaires
+│       ├── index.js              # Serveur Express + routes API
+│       └── __tests__/            # Tests unitaires
+│
+├── screenshots/                  # Captures pour le README
 └── README.md
----
+```
 
 ## 🚀 Lancement du projet
 
