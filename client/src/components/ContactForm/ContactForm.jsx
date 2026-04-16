@@ -76,17 +76,17 @@ function ContactForm() {
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <div className="form-layout">
             <PersonalInfo register={register} errors={errors} />
-            <MessageSection register={register} errors={errors} />
+            <MessageSection register={register} />
 
-            <AvailabilitySection
-              availabilities={availabilities}
-              currentSlot={currentSlot}
-              setCurrentSlot={setCurrentSlot}
-              onAdd={addAvailability}
-              onRemove={removeAvailability}
-            />
+            <div className="bottom-row">
+              <AvailabilitySection
+                availabilities={availabilities}
+                currentSlot={currentSlot}
+                setCurrentSlot={setCurrentSlot}
+                onAdd={addAvailability}
+                onRemove={removeAvailability}
+              />
 
-            <div className="form-footer">
               <button
                 type="submit"
                 className="btn-submit"

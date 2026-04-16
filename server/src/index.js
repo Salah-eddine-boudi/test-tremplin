@@ -74,6 +74,10 @@ app.get('/api/contacts', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`✅ Serveur démarré sur http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`✅ Serveur démarré sur http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
